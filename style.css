@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.toggle {
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+
+}
+
+/* The hidden checkbox */
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #716d6d;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+/* Circle inside the slider */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Toggle ON state */
+input:checked+.slider {
+  background-color: #000000;
+}
+
+input:checked+.slider::before {
+  transform: translateX(24px);
+}
+
+.dark {
+  padding-top: 2px;
+  padding-left: 4px;
+}
+
+.light {
+  padding-top: 3px;
+  padding-left: 2px;
+}
+
+.hearder1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10vh;
+}
+
+.name {
+  display: inline;
+  margin-right: auto;
+
+  font-size: 25px;
+
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 2vw;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: large;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.heading h1 {
+  letter-spacing: 5vw;
+  word-spacing: 2vw;
+
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10vw;
+
+
+
+}
+
+.name h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.subheading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.rbp {
+  display: grid;
+  grid-template-columns: 43vw 43vw;
+  grid-template-rows: 35vh 35vh 35vh;
+  height: auto;
+  row-gap: 30px;
+}
+
+.b1 {
+  margin-right: 2vw;
+}
+
+.margin {
+  margin-left: 10px;
+  width: 50%;
+}
+
+.detail h6 {
+  color: #6941C6;
+  font-size: 14px;
+}
+
+.detail h5 {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.b2 {
+  margin-left: 2vw;
+  display: flex;
+}
+
+.detail p {
+  color: #667085;
+  margin-top: 25px;
+}
+
+
+
+main {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.design {
+  background-color: #F0F9FF;
+  color: #026AA2;
+
+  width: auto;
+  height: auto;
+  background-color: #F0F9FF;
+  border-radius: 25px;
+}
+
+.research {
+  margin-left: 5px;
+  background-color: #FDF2FA;
+  color: #C11574;
+
+  width: auto;
+  height: auto;
+
+  border-radius: 25px;
+}
+
+.specification {
+  margin-top: 25px;
+  display: flex;
+}
+
+.presentation {
+  margin-left: 5px;
+
+  width: auto;
+  height: auto;
+  color: #C11574;
+  background-color: #FDF2FA;
+  border-radius: 25px;
+}
+
+.abp {
+  display: grid;
+  grid-template-columns: 28vw 28vw 28vw;
+  column-gap: 2vw;
+  grid-template-rows: 70vh 70vh;
+  row-gap: 2vh;
+}
+
+
+.bdetail {
+  height: 40%;
+  width: 100%;
+}
+
+.bdetail h5 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.bdetail h6 {
+  font-size: 14px;
+  color: #6941C6;
+}
+
+.bdetail p {
+  margin-top: 10px;
+  color: #667085;
+}
+
+.research2 {
+  color: #027A48;
+  background-color: #ECFDF3;
+  margin-left: 10px;
+}
+
+.research3 {
+  margin-left: 10px;
+  color: #C01048;
+  background-color: #FFF1F3;
+}
+
+.hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.slidebutten {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous {
+  margin-right: auto;
+
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.previous a {
+  text-decoration: none;
+  color: #667085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next {
+  margin-left: auto;
+  ;
+
+
+  border-radius: 25px;
+}
+
+.next a {
+  text-decoration: none;
+  color: #667085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  margin-left: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+.slide1 {
+  height: 30px;
+  width: 30px;
+}
+
+.slide1 a {
+  text-decoration: none;
+  color: #667085;
+
+}
+
+.slide a {
+  text-decoration: none;
+  color: #667085;
+}
+
+.slide1 a:hover {
+  color: #6941C6;
+  font-size: large;
+}
+
+.slide a:hover {
+  color: #6941C6;
+  font-size: large;
+}
+
+.links {
+  display: flex;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.l1 {
+  margin-left: 20px;
+}
+
+.l1 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+header {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
